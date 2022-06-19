@@ -1,0 +1,343 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #6D214F;
+}
+
+hr {
+    color: aqua;
+}
+
+.state {
+    font-size: 7rem;
+    color: #c8d6e5;
+    text-shadow: 3px 3px 6px black;
+    font-family: 'Teko', sans-serif;
+}
+
+.main {
+    background-color: #B33771;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    transform: translate(10%, 5%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 16vh 16vh 16vh 16vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 2px 2px 4px #636e72, -2px -2px 4px #636e72;
+}
+
+.rules {
+    grid-row: 1/5;
+    grid-column: 2/3;
+    align-self: flex-start;
+    font-size: 2.5rem;
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+}
+
+b {
+    font-size: 5rem;
+    color: red;
+    text-shadow: 2px 2px 4px black;
+}
+
+i {
+    background-color: #25CCF7;
+    color: black;
+}
+
+.start {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+#start {
+    height: 70%;
+    width: 70%;
+    background-color: #D6A2E8;
+    font-size: 3rem;
+    color: #55E6C1;
+    text-shadow: 2px 2px 2px black;
+}
+
+.question {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%
+}
+
+.answer {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%
+}
+
+.check {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+#check {
+    height: 70%;
+    width: 70%;
+    background-color: #55E6C1;
+    font-size: 3rem;
+    color: #D6A2E8;
+    text-shadow: 2px 2px 2px black;
+}
+
+#label {
+    color: #48dbfb;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+#input1 {
+    height: 50%;
+    width: 30%;
+    background-color: #F8EFBA;
+}
+
+#input2 {
+    height: 50%;
+    width: 30%;
+    background-color: #F8EFBA;
+}
+
+/* media queries */
+
+@media only screen and (max-width:1160px) {
+    .rules {
+        grid-row: 1/5;
+        grid-column: 2/3;
+        align-self: flex-start;
+        font-size: 2rem;
+        color: yellow;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+
+@media only screen and (max-width:750px) {
+    .rules {
+        grid-row: 1/5;
+        grid-column: 2/3;
+        align-self: flex-start;
+        font-size: 1.5rem;
+        color: yellow;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    #input1 {
+        height: 40%;
+        width: 25%;
+    }
+
+    #input2 {
+        height: 40%;
+        width: 25%;
+    }
+
+    .main {
+        background-color: #B33771;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+        transform: translate(10%, 5%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 12vh 12vh 12vh 12vh;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        box-shadow: 2px 2px 4px #636e72, -2px -2px 4px #636e72;
+    }
+
+    .state {
+        font-size: 4rem;
+        color: #c8d6e5;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    #label {
+        color: #48dbfb;
+        font-size: 3rem;
+        text-shadow: 1px 1px 2px black;
+
+    }
+
+   .rules i {
+        background-color: #25CCF7;
+        color: black;
+       text-shadow: 0px 0px 1px black;
+        
+    }
+}
+
+
+@media only screen and (max-width:560px) {
+    .rules {
+        grid-row: 1/5;
+        grid-column: 2/3;
+        align-self: flex-start;
+        font-size: 1rem;
+        color: yellow;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    #input1 {
+        height: 40%;
+        width: 50%;
+    }
+
+    #input2 {
+        height: 40%;
+        width: 50%;
+    }
+
+    .main {
+        background-color: #B33771;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+        transform: translate(10%, 5%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 8vh 8vh 8vh 8vh;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        box-shadow: 2px 2px 4px #636e72, -2px -2px 4px #636e72;
+    }
+
+    .state {
+        font-size: 3rem;
+        color: #c8d6e5;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    #label {
+        color: #48dbfb;
+        font-size: 2.1rem;
+        text-shadow: 1px 1px 2px black;
+
+    }
+
+   .rules i {
+        background-color: #25CCF7;
+        color: black;
+       text-shadow: 0px 0px 1px black;
+        
+    }
+    b {
+        font-size: 3.5rem;
+        color: red;
+        text-shadow: 2px 2px 4px black;
+    }
+}
+
+
+@media only screen and (max-width:400px) {
+    .rules {
+        grid-row: 1/5;
+        grid-column: 2/3;
+        align-self: flex-start;
+        font-size: 1rem;
+        color: yellow;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    #input1 {
+        height: 40%;
+        width: 50%;
+    }
+
+    #input2 {
+        height: 40%;
+        width: 50%;
+    }
+
+    .main {
+        background-color: #B33771;
+        display: grid;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+        transform: translate(5%, 5%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 10vh 10vh 10vh;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        box-shadow: 2px 2px 4px #636e72, -2px -2px 4px #636e72;
+    }
+
+    .state {
+        font-size: 3rem;
+        color: #c8d6e5;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    #label {
+        color: #48dbfb;
+        font-size: 1.6rem;
+        text-shadow: 1px 1px 2px black;
+
+    }
+
+   .rules i {
+        background-color: #25CCF7;
+        color: black;
+       text-shadow: 0px 0px 1px black;
+        
+    }
+    b {
+        font-size: 3rem;
+        color: red;
+        text-shadow: 2px 2px 3px black;
+    }
+    #check {
+        height: 70%;
+        width: 70%;
+        background-color: #55E6C1;
+        font-size: 2rem;
+        color: #D6A2E8;
+        text-shadow: 2px 2px 2px black;
+    }
+    #start {
+        height: 70%;
+        width: 70%;
+        background-color: #D6A2E8;
+        font-size: 2rem;
+        color: #55E6C1;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+}

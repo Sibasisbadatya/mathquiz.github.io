@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Bebas+Neue&family=Caveat&family=Cookie&family=Dancing+Script&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Lobster+Two&family=Racing+Sans+One&family=Style+Script&family=Teko:wght@300&family=Water+Brush&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mq.css">
+</head>
+
+<body>
+    <div class="state">Solve the Problems given Below in 10 Seconds:
+        <hr>
+    </div>
+
+    <div class="main">
+
+        <div class="rules">
+            <b>RULES</b><br><br>
+            <hr>
+            * Press Start to play the Math quiz.<br>
+            * Enter the correct value within 10 seconds.<br>
+            * Enter the ans in <i># 1 Decimal No.</i> form.<br>
+            For example 6/5=1.20 but you have to write 1.2 only,<br>
+            if your answer id 2 then then write 2.0.<br>And if your answer is 1.25 then you have to write 1.2 only.<br>
+            * On clicking <i># Next question</i> you will get your next question.<br>
+            * On clicking <i># Check button </i>you can validate your answer.<br>
+            * The main point is timer is <i>invisible</i> to you.
+
+        </div>
+
+        <div class="start">
+            <input type="button" value="Start" id="start" onclick="start()">
+        </div>
+
+        <div class="question">
+            <label for="" id="label">Solve This: </label>
+            <input type="text" id="input1">
+        </div>
+
+        <div class="answer">
+            <label for="" id="label">Enter Answer: </label>
+            <input type="text" id="input2">
+        </div>
+
+        <div class="check">
+            <input type="button" value="Check" id="check" onclick="check()">
+        </div>
+
+    </div>
+
+    <script src="mq.js"></script>
+</body>
+
+</html>
